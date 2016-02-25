@@ -16,15 +16,12 @@
 
 package com.example.android.testing.notes;
 
-import com.example.android.testing.notes.data.NoteRepositories;
-import com.example.android.testing.notes.data.NotesRepository;
-import com.example.android.testing.notes.data.NotesServiceApiImpl;
 import com.example.android.testing.notes.util.ImageFile;
 import com.example.android.testing.notes.util.ImageFileImpl;
 
 /**
  * Enables injection of production implementations for {@link ImageFile} and
- * {@link NotesRepository} at compile time.
+ * NotesRepository at compile time.
  */
 public class Injection {
 
@@ -32,7 +29,7 @@ public class Injection {
         return new ImageFileImpl();
     }
 
-    public static NotesRepository provideNotesRepository() {
+    /*public static NotesRepository provideNotesRepository() {
         return NoteRepositories.getInMemoryRepoInstance(new NotesServiceApiImpl());
-    }
+    }*/
 }
