@@ -47,6 +47,7 @@ public class CallAPI extends AsyncTask<String, String, String>{
 
     }
 
+    /*
     public void verifyEmail(View view) {
 
         EditText emailEditText = (EditText) findViewById(R.id.email_address);
@@ -59,5 +60,5 @@ public class CallAPI extends AsyncTask<String, String, String>{
             new CallAPI().execute(urlString);
 
         }
-    }
+    }*/
 }

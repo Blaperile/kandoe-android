@@ -30,13 +30,15 @@ public class MainActivity extends ActionBarActivity {
 
     }
 
+    /*
     public void testApi(View view) {
-        EditText txtTest = (EditText) findViewById(R.id.txtTest);
+        // EditText txtTest = (EditText) findViewById();
         String test = txtTest.getText().toString();
 
         String urlString = apiURL + test;
         new CallAPI().execute(urlString);
     }
+    */
 
     /*
 
