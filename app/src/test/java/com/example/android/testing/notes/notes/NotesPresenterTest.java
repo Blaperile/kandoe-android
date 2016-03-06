@@ -18,10 +18,6 @@ package com.example.android.testing.notes.notes;
 
 import com.google.common.collect.Lists;
 
-import com.example.android.testing.notes.data.Note;
-import com.example.android.testing.notes.data.NotesRepository;
-import com.example.android.testing.notes.data.NotesRepository.LoadNotesCallback;
-
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -37,9 +33,7 @@ import static org.junit.Assert.fail;
 import static org.mockito.Matchers.any;
 import static org.mockito.Mockito.verify;
 
-/**
- * Unit tests for the implementation of {@link NotesPresenter}
- */
+/*
 public class NotesPresenterTest {
 
     private static List<Note> NOTES = Lists.newArrayList(new Note("Title1", "Description1"),
@@ -57,7 +51,7 @@ public class NotesPresenterTest {
      * {@link ArgumentCaptor} is a powerful Mockito API to capture argument values and use them to
      * perform further actions or assertions on them.
      */
-    @Captor
+ /*   @Captor
     private ArgumentCaptor<LoadNotesCallback> mLoadNotesCallbackCaptor;
 
     //private NotesPresenter mNotesPresenter;
@@ -109,4 +103,4 @@ public class NotesPresenterTest {
         // Then note detail UI is shown
         verify(mNotesView).showNoteDetailUi(any(String.class));
     }
-}
+}*/
