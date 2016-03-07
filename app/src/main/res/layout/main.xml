@@ -1,47 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#6cc87c">
+    android:background="#f4ebe8">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+
+        />
+
+
+
+
+
 
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <Spinner
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/spinner"
-                android:entries="@array/menu_array"
-                android:spinnerMode="dropdown" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/imageView"
-                android:src="@drawable/logo"
-                android:maxHeight="10dp"
-                android:maxWidth="10dp"
-                android:minHeight="8dp"
-                android:minWidth="8dp"
-                android:layout_marginLeft="0dp"
-                android:layout_marginTop="20dp"
-                android:layout_margin="0dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Kandoe App"
-                android:id="@+id/textView"
-                android:layout_marginLeft="0dp"
-                android:textSize="34dp" />
-
-        </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
@@ -54,7 +37,10 @@
                 android:text="Optie 1"
                 android:id="@+id/button"
                 android:layout_gravity="center"
-                android:layout_marginLeft="100dp" />
+                android:layout_marginLeft="100dp"
+                android:nestedScrollingEnabled="false"
+                android:onClick="test"
+                android:background="#4E83B9" />
         </TableRow>
 
         <TableRow
@@ -67,7 +53,9 @@
                 android:layout_height="wrap_content"
                 android:text="Optie 2"
                 android:id="@+id/button2"
-                android:layout_marginLeft="100dp" />
+                android:layout_marginLeft="100dp"
+                android:onClick="test"
+                android:background="#4E83B9" />
         </TableRow>
 
         <TableRow
@@ -80,7 +68,9 @@
                 android:text="Optie 3"
                 android:id="@+id/button3"
                 android:layout_marginTop="50dp"
-                android:layout_marginLeft="100dp" />
+                android:layout_marginLeft="100dp"
+                android:background="#4E83B9" />
+
         </TableRow>
 
     </TableLayout>

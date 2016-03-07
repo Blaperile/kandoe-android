@@ -6,8 +6,6 @@ package testRetroFit;
 public class Organasation implements JppService {
     @Override
     public void getOrganisation() {
-
         System.out.println("zit in functie getOrganisation");
-
     }
 }
