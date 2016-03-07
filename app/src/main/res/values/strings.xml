@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Kandoe</string>
+
+    <string-array name="menu_array">
+        <item>Home</item>
+        <item>Planned Sessions</item>
+        <item>Sesiion History</item>
+        <item>Organisation</item>
+        <item>Settings</item>
+        <item>Sign inn</item>
+    </string-array>
 </resources>
